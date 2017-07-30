@@ -1,0 +1,66 @@
+doctype html
+html(lang="es")
+	head
+		meta(charset="UTF-8")
+		title Handlebars practica
+		meta(name="viewport", content="width=device-widt,initial-scale=1.0")
+		link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css")
+		link(href="https://fonts.googleapis.com/icon?family=Material+Icons", rel="stylesheet")
+		link(href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet")
+		link(rel="stylesheet", href="css/style.css")
+	body
+		.container.right-align
+			a
+				i.material-icons.grai local_parking
+			a
+				i.material-icons.grai account_circle
+			a
+				i.material-icons.grai brightness_5
+			a
+				i.material-icons.grai camera_alt
+			a
+				i.material-icons.grai local_parking
+		nav
+			.container
+				a(href="#").brand-logo.left
+					img.logo.valign-wrapper(src="img/logo.png")
+				ul(#nav-mobile).right.hide-on-med-and-down
+					li
+						a.menu.material-icons HOME arrow_drop_down
+					li
+						a.menu.material-icons PAGES arrow_drop_down
+					li
+						a.menu.material-icons BLOG arrow_drop_down
+					li
+						a.menu.material-icons PORTFOLIO arrow_drop_down
+					li
+						a.menu.material-icons SHORTCODES arrow_drop_down
+					li
+						a
+							i.menu.material-icons search
+		mixin fluid(titulo,parrafo)
+			.container-fluid
+				img(src="img/coming-soon-bg.png")
+				div.elementos
+					h4 #{titulo}
+					p #{parrafo}
+		+fluid("About Us","Why our Clients love to work with us")
+		.container
+			.row
+				.col.s6
+					img.escalar_img(src="img/aboutus/1.png")
+				.col.s6
+					p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+		.container
+			.row
+				mixin contenido(imagen,titulo,parrafo)
+					.col.s4
+						img.center(src="img/home/icon#{imagen}.png")
+						h5.center-align #{titulo}
+						p.center-align #{parrafo}
+				+contenido(1,"Incredibly responsive", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.")
+				+contenido(2,"Superior Typhograpy", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.")
+				+contenido(3,"Swift Page Builder", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.")
+		+fluid("Triangle corporate Template","A responsive, retina-ready & wide multipurpose template.")
+	script(src="https://code.jquery.com/jquery-3.2.1.min.js")
+	script(src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js")

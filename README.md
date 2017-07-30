@@ -7,6 +7,6 @@ Dependencias instaladas en desarrollo:
 - npm init  (package json)
 - npm install gulp --save-dev  (instalar gulp en el proyecto)
 - npm install gulp-jade --save-dev (instalar PUG)
-npm install gulp-sass --save-dev (istalar SASS para estilos)
+- npm install gulp-sass --save-dev (istalar SASS para estilos)
 
 ```
