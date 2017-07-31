@@ -23,18 +23,37 @@ padding:5%;
 padding-right: 42%;
 margin-top: -18%;
 position: relative;
+}
+.moto{
+padding:5%;
+padding-left: 60%;
+margin-top: -22%;
+position: relative;
+}
+.btn{
 
+margin-left: 48%;
+margin-top: -22%;
+
+border-radius: 10px;
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+border: 1px inset #0099ae;
 }
 .escalar_img{
 	width: 90%;
+}
+.escalar_blok{
+	width: 97%;
+	height: 97%;
+	margin-left: 1%;
 }
 .container{
 	.row{
 		.col.s6{
 			p{
-
 				padding-top: 23%;
-		}
+			}
 		}
 
 	}

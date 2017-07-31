@@ -62,5 +62,26 @@ html(lang="es")
 				+contenido(2,"Superior Typhograpy", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.")
 				+contenido(3,"Swift Page Builder", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.")
 		+fluid("Triangle corporate Template","A responsive, retina-ready & wide multipurpose template.")
+		img.moto(src="img/home/tour-icon2.png")
+		button.btn.right-align TAKE THE TOUR
+		.container
+			h3.center-align Meet the team
+			p.center-align Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod
+			p.center-align Sed do eiusmod tempor incididunt ut labore et dolore.
+		.container
+			.row
+				mixin box(imagen)
+					.col.s3
+						img.escalar_blok(src="img/aboutus/#{imagen}.jpg")
+						h5 John Doe
+						p CEO & Developer
+				+box(4)
+				+box(3)
+				+box(2)
+				+box(1)
+		.container-fluid
+			img(src="img/home/under.png")
+		.container-fluid
+			img(src="img/home/footer.png")
 	script(src="https://code.jquery.com/jquery-3.2.1.min.js")
 	script(src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js")
