@@ -40,7 +40,7 @@ html(lang="es")
 							i.menu.material-icons search
 		mixin fluid(titulo,parrafo)
 			.container-fluid
-				img(src="img/coming-soon-bg.png")
+				img.escalar_img(src="img/coming-soon-bg.png")
 				div.elementos
 					h4 #{titulo}
 					p #{parrafo}
@@ -55,7 +55,7 @@ html(lang="es")
 			.row
 				mixin contenido(imagen,titulo,parrafo)
 					.col.s4
-						img.center(src="img/home/icon#{imagen}.png")
+						img.margin_img(src="img/home/icon#{imagen}.png")
 						h5.center-align #{titulo}
 						p.center-align #{parrafo}
 				+contenido(1,"Incredibly responsive", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.")
@@ -82,6 +82,31 @@ html(lang="es")
 		.container-fluid
 			img(src="img/home/under.png")
 		.container-fluid
-			img(src="img/home/footer.png")
+			img.escalar_img(src="img/home/footer.png")
+		.footer.container.footi
+			.row
+				.col.s3
+					div
+						img(src="img/home/profile1.png")
+					div
+						img(src="img/home/profile2.png")
+				.col.s3
+					h5 Testimonial
+					p "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+					h6 Jhon Kalis
+					p "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+					h6 Abraham Josef
+				.col.s3
+					h5 Contacts
+					p E-mail: email@email.com Phone: +1(123)456 7891   Fax: +1(123)456 7890
+					h5 Address
+					p Unit C2,St.Vicent's Trading Est, Feeder Road, Bristol, BS2 0UY
+					p United Kingdom
+				.col.s3
+					h5 Send a message
+					input(type="text", placeholder="Name")
+					input(type="text", placeholder="Email Id")
+					textarea(type="text", placeholder="Your text here")
+					button.btn2 SUBMIT
 	script(src="https://code.jquery.com/jquery-3.2.1.min.js")
 	script(src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js")

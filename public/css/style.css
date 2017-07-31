@@ -36,15 +36,33 @@ nav {
   -webkit-border-radius: 10px;
   border: 1px inset #0099ae; }
 
+.btn2 {
+  width: 110px;
+  background-color: #0099ae;
+  color: white;
+  margin-left: 28%;
+  margin-top: 5%;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border: 1px inset #0099ae; }
+
 .escalar_img {
-  width: 90%; }
+  width: 94%; }
 
 .escalar_blok {
   width: 97%;
   height: 97%;
   margin-left: 1%; }
 
+.margin_img {
+  margin-left: 35%; }
+
 .container .row .col.s6 p {
   padding-top: 23%; }
+
+.footi {
+  margin-top: -40%;
+  position: relative; }
 
 /*# sourceMappingURL=style.css.map */
