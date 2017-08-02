@@ -10,11 +10,17 @@ nav {
   color: black;
   font-size: 15px; }
 
+.menu:hover {
+  color: #00aeef; }
+
 .logo {
   width: 75%; }
 
 .grai {
   color: #d3d3d3; }
+
+.grai:hover {
+  color: #00aeef; }
 
 .elementos {
   padding: 5%;
@@ -48,7 +54,7 @@ nav {
   border: 1px inset #0099ae; }
 
 .escalar_img {
-  width: 94%; }
+  width: 99%; }
 
 .escalar_blok {
   width: 97%;
@@ -61,8 +67,40 @@ nav {
 .container .row .col.s6 p {
   padding-top: 23%; }
 
+/*Footer*/
 .footi {
   margin-top: -40%;
   position: relative; }
+
+/*Dos*/
+.color_titulo {
+  height: 35px;
+  background-color: #0d6fb1;
+  color: white; }
+
+.triangulo-2 {
+  z-index: -2;
+  position: relative;
+  margin-left: 6%;
+  margin-top: -9%;
+  width: 0;
+  height: 0;
+  border-right: 100px solid transparent;
+  border-top: 100px solid #0d6fb1;
+  border-left: 100px solid transparent;
+  border-bottom: 100px solid transparent; }
+
+.align {
+  position: relative;
+  color: white;
+  margin-top: -86px;
+  margin-left: -32px; }
+
+.inline {
+  display: inline-block;
+  margin-left: 13%; }
+
+.margn {
+  margin-top: -90px; }
 
 /*# sourceMappingURL=style.css.map */

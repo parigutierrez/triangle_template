@@ -1,0 +1,36 @@
+extend templates/layout
+block append main
+	mixin fluid(titulo,parrafo)
+				.container-fluid
+					img.escalar_img(src="img/coming-soon-bg.png")
+					div.elementos
+						h4 #{titulo}
+						p #{parrafo}
+			+fluid("Pricing Table","Configuring your pricing table")
+	.container#planes
+		.row
+			.col.s3.col.l3
+				.row.color_titulo Basic Plan
+				.row
+					.triangulo-2.azul
+						p.align $29/Month
+				.margn
+					.row
+						p.inline Lorem ipsum dolor
+						i.material-icons add
+					.row
+						p.inline Lorem ipsum dolor
+						i.material-icons check
+					.row
+						p.inline Lorem ipsum dolor
+						i.material-icons add
+					.row
+						p.inline Lorem ipsum dolor
+						i.material-icons check
+					.row
+						p.inline Lorem ipsum dolor
+						i.material-icons add
+					.row
+						p.inline Lorem ipsum dolor
+						i.material-icons check
+				.row.color_titulo BUY NOW

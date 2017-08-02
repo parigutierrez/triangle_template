@@ -1,5 +1,6 @@
 var gulp = require('gulp');
 var jade = require('gulp-jade');
+var sass = require('gulp-sass');
 
 gulp.task('jade', function(){
     gulp.src('./src/*.jade')
@@ -13,4 +14,8 @@ gulp.task('watch', function(){
     gulp.watch('./src/*.jade', ['jade'])
 });
 
-gulp.task('default', ['jade', 'watch'])
+gulp.task('CSS', function(){
+	gulp.src('./src/scss/*.scss')
+	.pipe(gulp.dest('public/css/'))
+});
+gulp.task('default', ['jade', 'watch','CSS']);
