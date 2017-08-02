@@ -1,3 +1,54 @@
 extend templates/layout
 block append main
-	h1 Página tres
+	mixin fluid(titulo,parrafo)
+				.container-fluid
+					img.escalar_img(src="img/coming-soon-bg.png")
+					div.elementos
+						h4 #{titulo}
+						p #{parrafo}
+			+fluid("Portfolio","Be Creative")
+	.container
+		.row
+			.col.s6.offset-s3
+				a.separate(href="#") All
+				a.separate(href="#") Branded
+				a.separate(href="#") Design
+				a.separate(href="#") Folio
+				a.separate(href="#") Logos
+				a.separate(href="#") Mobile
+				a.separate(href="#") Mockup
+	.container
+		mixin bloque(imagenA,imagenB,imagenC,imagenD)
+			.row
+				.col.s3
+					img.scale(src="img/portfolio/#{imagenA}.jpg")
+					span Sailing Vivamus
+				.col.s3
+					img.scale(src="img/portfolio/#{imagenB}.jpg")
+					span Sailing Vivamus
+				.col.s3
+					img.scale(src="img/portfolio/#{imagenC}.jpg")
+					span Sailing Vivamus
+				.col.s3
+					img.scale(src="img/portfolio/#{imagenD}.jpg")
+					span Sailing Vivamus
+		+bloque(1,2,3,4)
+		+bloque(5,6,7,8)
+		+bloque(9,10,11,12)
+		+bloque(13,14,15,16)
+	.container
+		.row
+			.col.s5.offset-s3
+				a.separate(href="#")
+					img.size(src="img/lightbox/prev.png")
+				a.separate(href="") 1
+				a.separate(href="") 2
+				a.separate(href="") 3
+				a.separate(href="") 4
+				a.separate(href="") 5
+				a.separate(href="") 6
+				a.separate(href="") 7
+				a.separate(href="") 8
+				a.separate(href="") 9
+				a.separate(href="")
+					img.size(src="img/lightbox/next.png")
