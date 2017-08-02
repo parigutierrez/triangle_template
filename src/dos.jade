@@ -9,12 +9,45 @@ block append main
 			+fluid("Pricing Table","Configuring your pricing table")
 	.container#planes
 		.row
-			.col.s3.col.l3
-				.row.color_titulo Basic Plan
-				.row
-					.triangulo-2.azul
-						p.align $29/Month
-				.margn
+			mixin planes(plan, colortitulo, colortriangulo, precio)
+				.col.s3.col.l3
+					div(class="row", class="color_titulo-#{colortitulo}") #{plan}Plan
+					.row
+						div(class="triangulo-#{colortriangulo}")
+							p.align $#{precio}/Month
+					.margn
+						.row
+							p.inline Lorem ipsum dolor
+							i.material-icons add
+						.row
+							p.inline Lorem ipsum dolor
+							i.material-icons check
+						.row
+							p.inline Lorem ipsum dolor
+							i.material-icons add
+						.row
+							p.inline Lorem ipsum dolor
+							i.material-icons check
+						.row
+							p.inline Lorem ipsum dolor
+							i.material-icons add
+						.row
+							p.inline Lorem ipsum dolor
+							i.material-icons check
+					div(class="row", class="color_titulo-#{colortitulo}")
+						p BUY NOW
+			+planes("Basic",1,1,"29")
+			+planes("Silver",2,2,"89")
+			+planes("Gold",3,3,"29")
+			+planes("Platinum",4,4,"29")
+	.container#planes
+		.row
+			mixin paquetes(triangulosup, colortitulo, paquete, precio, trianguloinf)
+				.col.s3.col.l3
+					div(class="row", class="triangulosup-#{triangulosup}")
+					div(class="row", class="color_titulo-#{colortitulo}")
+						span.rigth #{paquete}
+						span  $#{precio}/Month
 					.row
 						p.inline Lorem ipsum dolor
 						i.material-icons add
@@ -33,4 +66,9 @@ block append main
 					.row
 						p.inline Lorem ipsum dolor
 						i.material-icons check
-				.row.color_titulo BUY NOW
+					div(class="row", class="triangulo-#{trianguloinf}")
+						p.align2 SIGN UP
+			+paquetes(1,1,"Basic","29",1)
+			+paquetes(2,2,"Silver","89",2)
+			+paquetes(3,3,"Gold","299",3)
+			+paquetes(4,4,"Platinum","699",4)

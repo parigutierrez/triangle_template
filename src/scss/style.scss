@@ -81,13 +81,37 @@ border: 1px inset #0099ae;
 	position: relative;
 }
 /*Dos*/
-.color_titulo{
+.color_titulo-1{
 	height: 35px;
 	background-color: #0d6fb1;
 	color: white;
+	margin-right: 2px;
+	margin-left: -20px;
+	margin-top: -20px;
 }
-.triangulo-2 {
-	z-index: -2;
+.color_titulo-2{
+	height: 35px;
+	background-color: #ac2429;
+	color: white;
+	margin-right: 2px;
+	margin-top: -20px;
+}
+.color_titulo-3{
+	height: 35px;
+	background-color: #e78817;
+	color: white;
+	margin-right: 2px;
+	margin-top: -20px;
+}
+.color_titulo-4{
+	height: 35px;
+	background-color: #5f7452;
+	color: white;
+	margin-right: 2px;
+	margin-top: -20px;
+}
+
+.triangulo-1 {
 	position: relative;
 	margin-left: 6%;
 	margin-top: -9%;
@@ -98,12 +122,98 @@ border: 1px inset #0099ae;
 	border-left: 100px solid transparent;
 	border-bottom: 100px solid transparent;
 }
+.triangulo-2 {
+	position: relative;
+	margin-left: 6%;
+	margin-top: -9%;
+	width: 0;
+	height: 0;
+	border-right: 100px solid transparent;
+	border-top: 100px solid #ac2429;
+	border-left: 100px solid transparent;
+	border-bottom: 100px solid transparent;
+}
+.triangulo-3 {
+	position: relative;
+	margin-left: 6%;
+	margin-top: -9%;
+	width: 0;
+	height: 0;
+	border-right: 100px solid transparent;
+	border-top: 100px solid #e78817;
+	border-left: 100px solid transparent;
+	border-bottom: 100px solid transparent;
+}
+.triangulo-4 {
+	position: relative;
+	margin-left: 6%;
+	margin-top: -9%;
+	width: 0;
+	height: 0;
+	border-right: 100px solid transparent;
+	border-top: 100px solid #5f7452;
+	border-left: 100px solid transparent;
+	border-bottom: 100px solid transparent;
+}
+//Sección paquetes
+.triangulosup-1 {
+	position: relative;
 
+	margin-top: -9%;
+	width: 0;
+	height: 0;
+	border-right: 100px solid transparent;
+	border-top: 100px solid transparent;
+	border-left: 100px solid transparent;
+	border-bottom: 100px solid #0d6fb1;
+}
+.triangulosup-2 {
+	position: relative;
+
+	margin-top: -9%;
+	width: 0;
+	height: 0;
+	border-right: 100px solid transparent;
+	border-top: 100px solid transparent;
+	border-left: 100px solid transparent;
+	border-bottom: 100px solid  #ac2429;
+}
+.triangulosup-3 {
+	position: relative;
+	margin-top: -9%;
+
+	width: 0;
+	height: 0;
+	border-right: 100px solid transparent;
+	border-top: 100px solid transparent;
+	border-left: 100px solid transparent;
+	border-bottom: 100px solid #e78817;
+}
+.triangulosup-4 {
+	position: relative;
+
+	margin-top: -9%;
+	width: 0;
+	height: 0;
+	border-right: 100px solid transparent;
+	border-top: 100px solid transparent;
+	border-left: 100px solid transparent;
+	border-bottom: 100px solid #5f7452;
+}
+.right{
+	margin-right: 50px;
+	padding-left: 12px;
+}
 .align{
 	position: relative;
 	color: white;
 	margin-top: -86px;
 	margin-left:-32px;
+}
+.align2{
+	color: white;
+	margin-top: -80px;
+	margin-left:-12px;
 }
 .inline{
 	display: inline-block;
