@@ -1,0 +1,25 @@
+extend templates/layout
+block append main
+	mixin fluid(imagen,titulo,parrafo)
+				.container-fluid
+					img.escalar_img(src="img/#{imagen}.png")
+					div.elementos
+						h4 #{titulo}
+						p #{parrafo}
+			+fluid("home/slider-bg","We Are Creative Nerds","Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.")
+	.container-fluid
+		img.mntn(src="img/home/slider/hill2.png")
+	.container
+			.row
+				mixin contenido(imagen,titulo,parrafo)
+					.col.s4
+						img.margin_img(src="img/home/icon#{imagen}.png")
+						h5.center-align #{titulo}
+						p.center-align #{parrafo}
+				+contenido(1,"Incredibly responsive", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.")
+				+contenido(2,"Superior Typhograpy", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.")
+				+contenido(3,"Swift Page Builder", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.")
+		+fluid("coming-soon-bg","Triangle corporate Template","A responsive, retina-ready & wide multipurpose template.")
+
+		img.moto(src="img/home/tour-icon2.png")
+		button.btn.right-align TAKE THE TOUR

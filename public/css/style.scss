@@ -218,15 +218,18 @@ border: 1px inset #0099ae;
 .inline{
 	display: inline-block;
 	margin-left: 13%;
-
 }
 .margn{
 	margin-top: -90px;
 }
 //Página tres
 .separate{
+	color:black;
 	margin-right: 17px;
 	font-size: 17px;
+}
+.separate:hover{
+	color:red;
 }
 .scale{
 width: 93%;
@@ -234,7 +237,13 @@ height: 93%;
 }
 .size{
 display: inline-block;
-width: 8%;
-height: 8%;
+width: 6%;
+height: 6%;
+margin-top: 6px;
 }
-
+.mntn{
+margin-top: -273px;
+margin-right: 80px;
+float: right;
+width: 32%;
+}

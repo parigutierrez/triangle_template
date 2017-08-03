@@ -1,0 +1,9 @@
+extend templates/layout
+block append main
+	mixin fluid(titulo,parrafo)
+		.container-fluid
+			img.escalar_img(src="img/coming-soon-bg.png")
+			div.elementos
+				h4 #{titulo}
+				p #{parrafo}
+	+fluid("Blog","Blog with left sidebar")
