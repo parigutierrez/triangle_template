@@ -232,4 +232,11 @@ nav {
   float: right;
   width: 32%; }
 
+.alinear {
+  position: relative;
+  margin-top: 130px; }
+
+.mrgn-lft {
+  margin-left: -80px; }
+
 /*# sourceMappingURL=style.css.map */
